@@ -1,0 +1,403 @@
+body{
+    margin: 0;
+    background-color:black;
+    padding-top: 200px;
+    
+}
+/*CABECERA HEADER INICIO*/
+
+header{
+    width: 100vw; /*respetar el ancho de una pantalla en cada seccion*/
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgb(138,204,117);
+    background: linear-gradient(90deg, rgba(138,204,117,1) 0%, rgba(121,32,24,1) 50%, rgba(229,151,132,1) 100%, rgba(55,35,8,1) 100%);
+    
+    display: flex;
+    transition: .7s;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+
+    }
+
+    header #titulo {
+
+    font-family: Impact;
+    font-size: 40px;
+    letter-spacing: 5px;
+    word-spacing:7px;
+    color: #c37f7f;
+    text-shadow: 0.1em 0.1em #333
+    }
+    
+.logo{
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 15px;
+}
+
+/*barra de busqueda*/
+.search input{  
+    width: 200px;
+    padding: 10px;
+    background-color:#8acc75;
+    font-size: 11px;
+    margin-right: 20px;
+}
+
+/*CABECERA HEADER FIN*/
+
+
+
+/*INICIO DE MENU DESPLAZABLE*/
+#seccion1{
+    display: flex;
+    transition: .7s;
+
+    position: fixed;
+    top: 98px; /*head mide 90px heigth*/
+    z-index: 10;
+
+}
+
+.navegacion{ 
+    width: 100vw;/*se cambia al tamaño de una pantalla para mantener organizado las secciones*/
+    background:#8acc75; /*fondo de color blanco*/
+}
+
+.navegacion ul{
+    list-style: none; /*saca los tilde*/
+   
+}
+
+.menu > li { /*edita solo la clase li y no las subclases*/
+    position: relative;
+    display: inline-block; /*pone uno al lado del otro*/
+}
+
+.menu > li>a { /*edita solo la clase hijo de li, osea la subclase*/
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: 'open sans';
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li a:hover { /* pone en color la opcion que seleccionamos*/
+    
+    color: #ce7d35;
+    transition: all .3s;
+}
+
+/* edita el submenu*/
+.submenu{
+   position: absolute; 
+   background:#8acc75;
+   width: 120%;
+   visibility: hidden;/*no aparezca y si lo haga cuando pase el maouse*/
+   opacity: 0;
+   transition: opacity 1.5s ;
+}
+
+/*llama al li que esta adentro del submenu*/
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color:#353535;
+    font-family: 'open sans';
+    text-decoration: none;
+}
+/*configura para que aparezca la opcion solo cuando se posiciona arriba de la opcion*/
+.menu li:hover .submenu{
+        visibility: visible;
+        opacity: 1;
+}
+/*FIN DE MENU DESPLAZABLE */
+
+/*NUESTRO ESPACIO INICIO*/
+.banner{
+    position: relative;
+    
+}
+
+.banner img{
+    display: inline-block;
+    width: 100%;
+    height: 60vh;
+    z-index: 0;
+    
+}
+.banner{
+    z-index: 1; /*situa el texto por encima del fondo*/
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+.galeria{
+    padding: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 60vh;
+}
+
+.galeria-div{
+    display: flex;
+   justify-content: center;
+}
+.galeria-img{
+    width: auto;
+    margin-right: 40px;
+}
+
+
+/*NUESTRO ESPACIO FIN*/
+
+/*MENU DE REDES SOCIALES INICIO*/
+.social {
+    position: fixed;
+    right: 0;
+    top: 270px;
+    z-index: 1000;
+}
+.social ul {
+    list-style: none;
+
+}
+.social ul li a {
+    display: inline-block;
+    color: white;
+    background: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+.social ul li .icon-twitter {
+    background:  #1D9BF0;
+}
+.social ul li .icon-whatsapp {
+    background: #25D366 ;
+}
+.social ul li .icon-youtube {
+    background: #C4302b;
+}
+.social ul li .icon-instagram {
+    background: #405de6;
+}
+.social ul li a:hover {
+    background:black;
+}
+
+
+
+/*MENU DE REDES SOCIALES FIN*/
+
+/*SECCION DE FORMULARIO DE CONTACTO INICIO*/
+
+#contact{
+    background-image: url(imagenes/backgroud2.png);
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}form {
+    width: 40vw;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 40vw;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+/*SECCION DE FORMULARIO DE CONTACTO FIN*/
+
+/*SECCION MAPA INICIO   */
+.ubicacion{
+    color: white;
+    background-image: url(imagenes/dark-background-1500x916.jpg);
+    background-size: cover;
+    min-height: 30vh;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+}
+
+
+/*SECCION MAPA FINAL   */
+
+
+/*PIE DE PAGINA INICIO*/
+
+.pie{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,15,16,1) 7%, rgba(23,23,24,1) 14%, rgba(23,23,24,1) 50%, rgba(23,23,24,1) 85%, rgba(15,15,16,1) 93%, rgba(0,0,0,1) 100%);;/*fondo de pie superior*/
+}
+img{
+    width: 120px;
+}
+.logo{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 5px
+}
+span{
+    font-size: 23px;
+}
+.fb{
+    background:#393d42;
+    padding: 6px;
+    border-radius: 50px;
+    color: white;
+}
+.tw{
+    background:#393d42;
+    padding: 6px;
+    border-radius: 50px;
+    color: white;
+}
+.in{
+    background:#393d42;
+    padding: 6px;
+    border-radius: 50px;
+    color: white;
+}
+.li{
+    background:#393d42;
+    padding: 6px;
+    border-radius: 50px;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+.redes-1{
+    margin: 10px auto;
+    font-size: 3rem;
+
+}
+.redes-2{
+    margin: 10px auto;
+    font-size: 3rem;    
+}
+.logotipo{
+    font-size: 18px;
+    color: white;
+}
+.derechos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+/*redes sociales:*/
+      
+/*PIE DE PAGINA FINAL*/
+
+/*PAGINA 2 INICIO*/
+
+article{
+    width: 100vw;
+}
+header .carrito{
+    margin-right:35px;
+    display: flex;
+    
+}
+header .carrito img{
+    width: 35px;
+}
+
+.ventas img {
+    width: 100%;
+}
+
+  
+/*Ordenes de producto*/
+.conteiner-div{
+    display: flex;
+    border: 1px solid black;
+    border-color: #333;
+    background-color: #45a049;
+    padding: 15px;
+    gap: 40px;
+    align-content:space-between;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.Orden-producto{
+    border: 3px solid gray;
+    background-color: aliceblue;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 25vw;
+    height: auto;
+    text-align: center;   
+}
+.Orden-producto img{
+    width: 100%;
+}
+
+/*PAGINA 2 FINAL*/
