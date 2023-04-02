@@ -1,7 +1,10 @@
+*{
+    font-family: 'Francois One', sans-serif;
+}
 body{
     margin: 0;
     background-color:black;
-    padding-top: 200px;
+    padding-top: 160px;
     
 }
 /*CABECERA HEADER INICIO*/
@@ -11,7 +14,9 @@ header{
     display: flex;
     height: 90px;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
+    align-content: center;
     padding: 10px;
     background: rgb(138,204,117);
     background: linear-gradient(90deg, rgba(138,204,117,1) 0%, rgba(121,32,24,1) 50%, rgba(229,151,132,1) 100%, rgba(55,35,8,1) 100%);
@@ -22,12 +27,9 @@ header{
     top: 0%;
     left: 0%;
     z-index: 10;
-
     }
 
-    header #titulo {
-
-    font-family: Impact;
+header #titulo {
     font-size: 40px;
     letter-spacing: 5px;
     word-spacing:7px;
@@ -36,15 +38,15 @@ header{
     }
     
 .logo{
-display: flex;
-align-items: center;
-text-decoration: none;
-}
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    }
 
 .logo img{
-    height: 100px;
-    margin-right: 15px;
-}
+    width: 80px;
+    margin:auto;
+    }
 
 /*barra de busqueda*/
 .search input{  
@@ -65,9 +67,12 @@ text-decoration: none;
     transition: .7s;
 
     position: fixed;
-    top: 98px; /*head mide 90px heigth*/
+    top: 95px; /*head mide 90px heigth*/
     z-index: 10;
-
+}
+/*borrar?*/
+section #seccion1{
+    height:20px;
 }
 
 .navegacion{ 
@@ -87,7 +92,7 @@ text-decoration: none;
 
 .menu > li>a { /*edita solo la clase hijo de li, osea la subclase*/
     display: block;
-    padding: 15px 20px;
+    padding: 0 25px;
     color: #353535;
     font-family: 'open sans';
     text-decoration: none;
@@ -168,7 +173,7 @@ text-decoration: none;
 .social {
     position: fixed;
     right: 0;
-    top: 270px;
+    top: 250px;
     z-index: 1000;
 }
 .social ul {
@@ -211,12 +216,14 @@ text-decoration: none;
 
 /*SECCION DE FORMULARIO DE CONTACTO INICIO*/
 
-#contact{
-    background-image: url(imagenes/backgroud2.png);
+.contact{
+    background-image: url(imagenes/dark-background-1500x916.jpg);
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
-}form {
+    background-size:cover;
+}
+form {
     width: 40vw;
     margin: auto;
     text-align: left;
@@ -286,7 +293,8 @@ text-decoration: none;
 img{
     width: 120px;
 }
-.logo{
+
+.logo-pie{
     display: grid;
     align-items: center;
     justify-items: center;
@@ -351,7 +359,10 @@ span{
       
 /*PIE DE PAGINA FINAL*/
 
+
+
 /*PAGINA 2 INICIO*/
+
 
 article{
     width: 100vw;
@@ -399,6 +410,10 @@ header .carrito img{
 .Orden-producto img{
     width: 100%;
 }
+.productos .Orden-producto p{
+    color: black;
+}
+
 
 /*PAGINA 2 FINAL*/
 
