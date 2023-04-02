@@ -18,8 +18,7 @@ header{
     align-items: center;
     align-content: center;
     padding: 10px;
-    background: rgb(138,204,117);
-    background: linear-gradient(90deg, rgba(138,204,117,1) 0%, rgba(121,32,24,1) 50%, rgba(229,151,132,1) 100%, rgba(55,35,8,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,15,16,1) 7%, rgba(23,23,24,1) 14%, rgba(23,23,24,1) 50%, rgba(23,23,24,1) 85%, rgba(15,15,16,1) 93%, rgba(0,0,0,1) 100%);;/*fondo de pie superior*/
     
     display: flex;
     transition: .7s;
@@ -52,9 +51,10 @@ header #titulo {
 .search input{  
     width: 200px;
     padding: 10px;
-    background-color:#8acc75;
     font-size: 11px;
     margin-right: 20px;
+    background-color: #252525;
+    color: #f6ecde;
 }
 
 /*CABECERA HEADER FIN*/
@@ -77,7 +77,7 @@ section #seccion1{
 
 .navegacion{ 
     width: 100vw;/*se cambia al tamaño de una pantalla para mantener organizado las secciones*/
-    background:#8acc75; /*fondo de color blanco*/
+    background: #252525;
 }
 
 .navegacion ul{
@@ -93,7 +93,7 @@ section #seccion1{
 .menu > li>a { /*edita solo la clase hijo de li, osea la subclase*/
     display: block;
     padding: 0 25px;
-    color: #353535;
+    color: #f6ecde;
     font-family: 'open sans';
     text-decoration: none;
     font-size: 20px;
@@ -101,14 +101,14 @@ section #seccion1{
 
 .menu li a:hover { /* pone en color la opcion que seleccionamos*/
     
-    color: #ce7d35;
+    color: #f6ecde;
     transition: all .3s;
 }
 
 /* edita el submenu*/
 .submenu{
    position: absolute; 
-   background:#8acc75;
+   background:#252525;
    width: 120%;
    visibility: hidden;/*no aparezca y si lo haga cuando pase el maouse*/
    opacity: 0;
@@ -119,7 +119,7 @@ section #seccion1{
 .submenu li a{
     display: block;
     padding: 15px;
-    color:#353535;
+    color:#f6ecde;
     font-family: 'open sans';
     text-decoration: none;
 }
@@ -154,7 +154,6 @@ section #seccion1{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
-    height: 60vh;
 }
 
 .galeria-div{
@@ -291,7 +290,7 @@ form {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,15,16,1) 7%, rgba(23,23,24,1) 14%, rgba(23,23,24,1) 50%, rgba(23,23,24,1) 85%, rgba(15,15,16,1) 93%, rgba(0,0,0,1) 100%);;/*fondo de pie superior*/
 }
 img{
-    width: 120px;
+    width: 150px;
 }
 
 .logo-pie{
@@ -367,14 +366,7 @@ span{
 article{
     width: 100vw;
 }
-header .carrito{
-    margin-right:35px;
-    display: flex;
-    
-}
-header .carrito img{
-    width: 35px;
-}
+
 
 .ventas img {
     width: 100%;
@@ -386,7 +378,7 @@ header .carrito img{
     display: flex;
     border: 1px solid black;
     border-color: #333;
-    background-color: #45a049;
+    background-color: #252525;
     padding: 15px;
     gap: 40px;
     align-content:space-between;
