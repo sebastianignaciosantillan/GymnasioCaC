@@ -401,3 +401,62 @@ header .carrito img{
 }
 
 /*PAGINA 2 FINAL*/
+
+/*PAGINA 3 INICIO*/
+
+.Sobre-Nosotros{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,15,16,1) 7%, rgba(23,23,24,1) 14%, rgba(23,23,24,1) 50%, rgba(23,23,24,1) 85%, rgba(15,15,16,1) 93%, rgba(0,0,0,1) 100%);;/*fondo de pie superior*/
+    text-align:center;
+    font-style: oblique;
+    color: white;
+    font-size: 25px;
+    width: 100vw;
+    height: 90vh;
+    padding-top: 20px;  
+}
+.txt h1{
+    text-align:center;
+    
+}
+.horarios{
+    z-index: 1;
+    background: linear-gradient(to bottom, rgb(0 0 0 /.5),rgb(0 0 0 /.3)),url(imagenes/restorative-yoga-fb.jpg);
+    
+}
+.horarios {
+    width: 100vw;
+}
+.contenedor{
+    display: flex;
+    gap: 20px;
+    padding-left: 34px;
+    padding-top: 30px;
+    
+}
+.contenedor .deporte{
+    border: 1px solid white;
+    border-radius: 12%;
+    width: 30vw;
+    height: 90vh;
+    background-color:black;
+    opacity: .6;
+    transition: 400ms all;
+    cursor: pointer;
+    
+}
+.contenedor .deporte:hover{
+    opacity: .85;
+    
+}
+.deporte h1,h2, p, button{
+    text-align: center;
+    padding: 10px 10px 8px 10px;
+    color:rgb(247, 249, 251);
+}
+.deporte h2{
+    
+    color: blanchedalmond;
+
+}
+
+/*PAGINA 3 FINAL*/
